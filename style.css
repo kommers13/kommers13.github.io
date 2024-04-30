@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* выравниваем содержимое слева */
+    justify-content: flex-start; 
 }
 
 header img {
@@ -15,7 +15,7 @@ header h1 {
 }
 
 header p {
-    margin-top: 5px; /* добавляем небольшой отступ сверху */
+    margin-top: 5px; 
 }
 nav ul {
     list-style-type: none;
