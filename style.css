@@ -1,39 +1,144 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
+:root {
+    --main-color: #264F87;
+}
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+}
+.dark-theme {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 
-header img {
-    width: 100px;
-    height: 100px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.head_content {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.head_content header {
+    display: flex;
+    align-items: center;
+}
+
+.head_content header img {
+    width: 80px;
     margin-right: 20px;
 }
 
-header h1 {
-    margin: 0;
+.head_content header h1 {
+    font-size: 28px;
 }
 
-header p {
-    margin-top: 5px; 
+.head_content header p {
+    font-size: 16px;
 }
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+    list-style: none;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    margin: 0 10px;
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: black;
+    font-size: 18px;
+}
+
+.sidebar_left {
+    background-color: #666;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+}
+
+.catalog {
+    list-style: none;
+}
+
+.catalog li {
+    margin-bottom: 10px;
+}
+
+.catalog li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.news_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* New */
+    padding: 20px;
+}
+
+/* Adjustments for news_block */
+.news_block {
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 40px); /* Two columns layout */
+}
+
+.news_block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news_block p {
+    font-size: 16px;
+}
+
+/* Media query for phones */
+@media screen and (max-width: 767px) {
+    .sidebar_left {
+        width: 100%;
+    }
+
+    .news_block {
+        width: 100%; /* Full width */
+    }
+}
+
+/* Media query for Full HD screens */
+@media screen and (min-width: 1920px) {
+    .news_block {
+        width: calc(33.33% - 40px); /* Three columns layout */
+    }
+}
+
+/* Media query for 2K monitors */
+@media screen and (min-width: 2560px) {
+    .sidebar_left {
+        width: 250px;
+    }
+
+    .news_block {
+        width: calc(25% - 40px); /* Four columns layout */
+    }
 }
