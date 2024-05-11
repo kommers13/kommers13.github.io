@@ -93,16 +93,14 @@ nav ul li a {
 .news_area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* New */
+    justify-content: space-between; 
     padding: 20px;
 }
-
-/* Adjustments for news_block */
 .news_block {
     background-color: #ddd;
     padding: 20px;
     margin-bottom: 20px;
-    width: calc(50% - 40px); /* Two columns layout */
+    width: calc(50% - 40px); 
 }
 
 .news_block h2 {
@@ -113,32 +111,28 @@ nav ul li a {
 .news_block p {
     font-size: 16px;
 }
-
-/* Media query for phones */
 @media screen and (max-width: 767px) {
     .sidebar_left {
         width: 100%;
     }
 
     .news_block {
-        width: 100%; /* Full width */
+        width: 100%; 
     }
 }
 
-/* Media query for Full HD screens */
 @media screen and (min-width: 1920px) {
     .news_block {
-        width: calc(33.33% - 40px); /* Three columns layout */
+        width: calc(33.33% - 40px); 
     }
 }
 
-/* Media query for 2K monitors */
 @media screen and (min-width: 2560px) {
     .sidebar_left {
         width: 250px;
     }
 
     .news_block {
-        width: calc(25% - 40px); /* Four columns layout */
+        width: calc(25% - 40px); 
     }
 }
