@@ -6,63 +6,88 @@
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/Images/icon.png"/>
 </head>
-<body>
-    <div class="head_content"><header>
+<body class="theme-light">
+<div class="head_content">
+    <header class="header">
         <img src="/Images/logo_tux.png" alt="Логотип">
         <div>
             <h1>LinLab</h1>
             <p>Сайт по программному обеспечению для Linux</p>
         </div>
-    </header></div>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="#">Интерактив</a></li>
-            <li><a href="#">Консоль</a></li>
-            <li><a href="#">Проект</a></li>
-            <li><a href="#">О сайте</a></li>
-            <li><button id="theme">Смена темы</button></li>
-        </ul>
-    </nav>
+    </header>
+</div>
 
-    <div class="sidebar_left">
-        <ul class="catalog">
-            <li><a href="/Sites/..." title="Дистрибутивы Linux">Дистрибутивы Linux</a></li>
-            <li><a href="/Sites/..." title="Офисные приложения">Офисные приложения</a></li>
-            <li><a href="/Sites/..." title="Мультимедийные приложения">Мультимедийные приложения</a></li>
-            <li><a href="/Sites/..." title="Научно-образовательные приложения">Научно-образовательные приложения</a></li>
-            <li><a href="/Sites/..." title="ПО для интернет">ПО для интернет</a></li>
-            <li><a href="/Sites/..." title="Средства для разработки">Средства для разработки</a></li>
-            <li><a href="/Sites/..." title="Утилиты для администрирования">Утилиты для администрирования</a></li>
-            </ul>
-    </div>
+<nav>
+    <ul class="nav-list">
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="#">Интерактив</a></li>
+        <li><a href="#">Консоль</a></li>
+        <li><a href="#">Проект</a></li>
+        <li><a href="#">О сайте</a></li>
+        <li><button id="theme-toggle">Смена темы</button></li>
+    </ul>
+</nav>
+
+<div class="sidebar_left">
+    <ul class="catalog">
+        <li><a href="/Sites/..." title="Дистрибутивы Linux">Дистрибутивы Linux</a></li>
+        <li><a href="/Sites/..." title="Офисные приложения">Офисные приложения</a></li>
+        <li><a href="/Sites/..." title="Мультимедийные приложения">Мультимедийные приложения</a></li>
+        <li><a href="/Sites/..." title="Научно-образовательные приложения">Научно-образовательные приложения</a></li>
+        <li><a href="/Sites/..." title="ПО для интернет">ПО для интернет</a></li>
+        <li><a href="/Sites/..." title="Средства для разработки">Средства для разработки</a></li>
+        <li><a href="/Sites/..." title="Утилиты для администрирования">Утилиты для администрирования</a></li>
+    </ul>
+</div>
+
+<div class="main_content">
     <div class="news_area">
         <div class="news_block">
-            <h2>Заголовок новости 1</h2>
-            <p>Текст новости 1</p>
+            <h2>Вышел Rocky Linux 9.4</h2>
+            <img src="/Images/news1.png" alt="Изображение новости 1" class="news_image">
+            <p>Потихоньку-полегоньку, несколько дней назад вышел релиз 9.4 проекта Rocky Linux — дистрибутива, организованного Грегори Курцером в ответ на прекращение классических релизов CentOS и переход к CentOS Stream. Грегори Курцер, будучи разработчиком CentOS, решил начать всё заново, и запустил проект Rocky Linux, который должен был делать всё то же самое, что раньше делал CentOS, но теперь уже отдельно от Red Hat.</p>
+            <a href="https://rockylinux.org/news/rocky-linux-9-4-ga-release" class="source_link">Источник</a>
         </div>
-
         <div class="news_block">
-            <h2>Заголовок новости 2</h2>
-            <p>Текст новости 2</p>
+            <h2>Изменения для улучшения отображения KDE-приложений в GNOME и Xfce</h2>
+            <img src="/Images/news2.png" alt="Изображение новости 2" class="news_image">
+            <p>Нейт Грэм (Nate Graham), разработчик, занимающийся контролем качества в проекте KDE, опубликовал очередной отчёт о разработке KDE. Наиболее заметным изменением стала инициатива по решению проблем с пиктограммами, при запуске приложений, входящих в состав KDE Gear, в окружениях, отличных от KDE, таких как GNOME и Xfce.</p>
+            <a href="https://pointieststick.com/2024/05/17/this-week-in-kde-all-about-those-apps/" class="source_link">Источник</a>
         </div>
-
         <div class="news_block">
-            <h2>Заголовок новости 3</h2>
-            <p>Текст новости 3</p>
+            <h2>LibreELEC 12 на базе медиацентра Kodi</h2>
+            <p>LibreELEC 12 использует медиацентр Kodi 21 «Omega». В Kodi 21 выполнен переход на FFmpeg 6, улучшена производительность и стабильность работы программы, обновлен интерфейс многих диалогов и выполнены другие улучшения.</p>
+            <a href="https://pingvinus.ru/news/5150" class="source_link">Источник</a>
         </div>
-
         <div class="news_block">
-            <h2>Заголовок новости 4</h2>
-            <p>Текст новости 4</p>
+            <h2>ЕГЭ на Linux: в России протестируют сдачу экзамена на отечественной ОС</h2>
+            <p>В ПАО «Группа "Астра"» также подтвердили участие в адаптации программного обеспечения для ЕГЭ к российским операционным системам. Как утверждают в компании, в проект привлечены и другие разработчики, поскольку решение будет мультиплатформенным. В «Ред Софта» (разработчик «Ред ОС») считают критически важным провести тестирование Рособрнадзора на популярных российских операционных системах, так как многие учебные заведения уже переведены на них. В НТЦ ИТ РОСА лишь заявили, что работают над операционной системой на базе Linux под названием РОСА, которая применяется в образовательных организациях.</p>
+            <a href="https://www.kommersant.ru/doc/6690444" class="source_link">Источник</a>
         </div>
     </div>
-    <footer>
-        <div>Контакты:</div>
-        <ul>
-            <li>Email: 99.3333@mail.com</li>
-        </ul>
-    </footer>
-    <script src="script.js" defer></script>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Контакты</h3>
+            <ul>
+                <li>Email: 99.3333@mail.com</li>
+                <li>Телефон: +1234567890</li>
+                <li>Адрес: Москва ул. Бра, дом 123, офис 456</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Мы в социальных сетях</h3>
+            <ul>
+                <li><a href="#">Вконтаке</a></li>
+                <li><a href="#">Телеграмм</a></li>
+                <li><a href="#">Однокласнники</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
