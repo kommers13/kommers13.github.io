@@ -1,0 +1,22 @@
+[
+  { "name": "Ubuntu", "minCpu": 2, "minFrequency": 1.4, "minRam": 4, "minGpu": "integrated", "preferences": ["beginner", "development", "media"] },
+  { "name": "Fedora", "minCpu": 2, "minFrequency": 1.9, "minRam": 4, "minGpu": "integrated", "preferences": ["development", "enterprise"] },
+  { "name": "Debian", "minCpu": 2, "minFrequency": 1.0, "minRam": 2, "minGpu": "budget", "preferences": ["development", "enterprise"] },
+  { "name": "Arch Linux", "minCpu": 2, "minFrequency": 1.7, "minRam": 4, "minGpu": "integrated", "preferences": ["development", "privacy"] },
+  { "name": "Manjaro", "minCpu": 2, "minFrequency": 1.2, "minRam": 4, "minGpu": "midrange", "preferences": ["beginner", "development", "gaming"] },
+  { "name": "Pop!_OS", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "budget", "preferences": ["development", "gaming", "media"] },
+  { "name": "Elementary OS", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "integrated", "preferences": ["beginner", "media"] },
+  { "name": "Zorin OS", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "integrated", "preferences": ["beginner", "media"] },
+  { "name": "Linux Mint", "minCpu": 2, "minFrequency": 1.0, "minRam": 2, "minGpu": "integrated", "preferences": ["beginner", "development", "media"] },
+  { "name": "Kubuntu", "minCpu": 2, "minFrequency": 1.2, "minRam": 4, "minGpu": "integrated", "preferences": ["beginner", "media"] },
+  { "name": "Kali Linux", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "integrated", "preferences": ["privacy", "development"] },
+  { "name": "Mageia Linux", "minCpu": 2, "minFrequency": 1.2, "minRam": 4, "minGpu": "integrated", "preferences": ["beginner", "media", "development"] },
+  { "name": "MX Linux", "minCpu": 1, "minFrequency": 1.4, "minRam": 2, "minGpu": "integrated", "preferences": ["beginner", "lightweight"] },
+  { "name": "Slax Linux", "minCpu": 1, "minFrequency": 0.6, "minRam": 1, "minGpu": "integrated", "preferences": ["beginner", "lightweight"] },
+  { "name": "Xubuntu", "minCpu": 2, "minFrequency": 1.0, "minRam": 2, "minGpu": "integrated", "preferences": ["beginner", "lightweight"] },
+  { "name": "Slackware", "minCpu": 2, "minFrequency": 1.0, "minRam": 2, "minGpu": "integrated", "preferences": ["privacy", "development"] },
+  { "name": "openSUSE", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "midrange", "preferences": ["development", "enterprise"] },
+  { "name": "Void Linux", "minCpu": 2, "minFrequency": 1.0, "minRam": 2, "minGpu": "budget", "preferences": ["development", "privacy", "lightweight"] },
+  { "name": "Gentoo", "minCpu": 2, "minFrequency": 1.8, "minRam": 4, "minGpu": "integrated", "preferences": ["development", "privacy"] },
+  { "name": "Parrot OS", "minCpu": 2, "minFrequency": 1.5, "minRam": 4, "minGpu": "integrated", "preferences": ["privacy", "development"] }
+]

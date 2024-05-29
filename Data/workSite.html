@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>LinLab - О сайте</title>
+    <title>LinLab - Подбор дистрибутива</title>
     <link href="../style.css" rel="stylesheet">
     <script src="../script.js" defer></script>
     <link rel="shortcut icon" href="/Images/icon.png"/>
@@ -49,46 +49,56 @@
     </div>
 </div>
 
-    <div class="main_content">
-        <section class="about">
-            <h2>О сайте</h2>
-            <p>LinLab — это ресурс, посвященный программному обеспечению для операционной системы Linux. Мы стремимся предоставить актуальную информацию о различных дистрибутивах, приложениях и инструментах, которые могут быть полезны как новичкам, так и опытным пользователям Linux.</p>
-            <h3>Наша миссия</h3>
-            <p>Мы верим, что Linux предлагает мощную и гибкую платформу для всех пользователей компьютеров. Наша миссия — сделать Linux доступным и понятным для всех, предоставляя качественные статьи, руководства и новости.</p>
-            <h3>Контактная информация</h3>
-            <p>Если у вас есть вопросы или предложения, вы можете связаться с нами через форму обратной связи ниже или использовать следующие контактные данные:</p>
-            <ul>
-                <li>Email: 99.3333@mail.com</li>
-                <li>Телефон: +1234567890</li>
-                <li>Адрес: Москва ул. Бра, дом 123, офис 456</li>
-            </ul>
-        </section>
+<div class="main_content">
+    <section class="about">
+        <h2>О проекте</h2>
+        <p>Добро пожаловать в наш инструмент для выбора дистрибутива Linux! Этот инструмент поможет вам найти лучший дистрибутив на основе вашего оборудования и предпочтений.</p>
+    </section>
+    <form class="contact-form" id="distroForm">
+        <h2>Выбор параметров</h2>
+        <label for="cpuCores">Количество ядер процессора:</label>
+        <input type="number" id="cpuCores" name="cpuCores" min="1" required>
 
-        <section class="contact-form">
-            <h2>Обратная связь</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
+        <label for="cpuFrequency">Минимальная частота процессора (ГГц):</label>
+        <input type="number" id="cpuFrequency" name="cpuFrequency" step="0.1" min="0.5" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <label for="ram">Объем оперативной памяти (ГБ):</label>
+        <input type="number" id="ram" name="ram" min="1" required>
 
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="gpu">Тип видеокарты:</label>
+        <select id="gpu" name="gpu" required>
+            <option value="integrated">Интегрированная</option>
+            <option value="budget">Бюджетная</option>
+            <option value="midrange">Средняя</option>
+            <option value="highend">Высокопроизводительная</option>
+        </select>
 
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
-    </div>
+        <label for="preferences">Ваши предпочтения:</label>
+        <select id="preferences" name="preferences" multiple required>
+            <option value="beginner">Для начинающих</option>
+            <option value="privacy">Конфиденциальность</option>
+            <option value="development">Разработка</option>
+            <option value="gaming">Игры</option>
+            <option value="media">Медиа</option>
+            <option value="enterprise">Корпоративные решения</option>
+            <option value="lightweight">Легковесные</option>
+        </select>
 
+        <button type="submit">Найти дистрибутив</button>
+    </form>
+
+    <div class="distros-grid" id="distroResults"></div>
+</div>
+
+</section>
 <footer>
     <div class="footer-content">
         <div class="contact-info">
             <h3>Контакты</h3>
             <ul>
                 <li>Email: 99.3333@mail.com</li>
-                <li>Телефон: +1234567890</li>
-                <li>Адрес: Москва ул. Бра, дом 123, офис 456</li>
+                <li>Телефон: +7-939-908-91-45</li>
+                <li>Адрес: Иркутск бульвар Гагарина дом 20</li>
             </ul>
         </div>
     </div>
