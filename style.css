@@ -39,14 +39,30 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Georgia', serif;
 }
 
-.header img {
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     height: 100px;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
 }
 
 nav {
@@ -144,6 +160,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
+    position: relative;
 }
 
 .news_image {
@@ -167,6 +184,7 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-content {
@@ -208,7 +226,7 @@ footer {
     font-weight: bold;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form select {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;
@@ -286,7 +304,6 @@ footer {
     text-decoration: underline;
 }
 
-
 @media (min-width: 1920px) {
     .header, nav, .main_content, footer {
         padding: 20px;
@@ -340,7 +357,18 @@ footer {
         padding: 30px;
     }
 }
+
 @media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+
     .news_area {
         display: grid;
         grid-template-columns: 1fr;
@@ -365,5 +393,45 @@ footer {
     .news_area {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1440px) {
+    .social-media {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        padding: 30px 50px;
+    }
+
+    .social-media {
+        justify-content: flex-end;
+    }
+
+    .logo-title {
+        width: 60%;
+    }
+
+    .social-media {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-media {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+    .header {
+        padding: 20px 40px;
+    }
+
+    .social-media {
+        justify-content: flex-end;
     }
 }
