@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>LinLab - Подбор дистрибутива</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/form.js" defer></script>
+    <link rel="shortcut icon" href="../img/icon.png"/>
+</head>
+<body class="theme-light">
+<div class="head_content">
+    <header class="header">
+        <div class="logo-title">
+            <img src="../img/logo.png" alt="Логотип" class="logo">
+            <div>
+                <h1>LinLab</h1>
+                <p>Сайт по программному обеспечению для Linux</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://vk.com/" target="_blank"><img src="../img/vk.png" alt="Вконтакте" class="social-icon"></a>
+            <a href="https://web.telegram.org/" target="_blank"><img src="../img/tg.png" alt="Телеграм" class="social-icon"></a>
+        </div>
+    </header>
+</div>
+
+<nav>
+    <ul class="nav-list">
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="formsite.html">Интерактив</a></li>
+        <li><a href="consolesite.html">Консоль</a></li>
+        <li><a href="initsite.html">Проект</a></li>
+        <li><a href="aboutsite.html">О сайте</a></li>
+        <li><button id="theme-toggle">Смена темы</button></li>
+    </ul>
+</nav>
+
+<div class="content-container">
+    <div class="sidebar_left">
+        <ul class="catalog">
+            <li><a href="category/distributionsite.html" title="Дистрибутивы Linux">Дистрибутивы Linux</a></li>
+            <li><a href="category/officesite.html" title="Офисные приложения">Офисные приложения</a></li>
+            <li><a href="category/multimediasite.html" title="Мультимедийные приложения">Мультимедийные приложения</a></li>
+            <li><a href="category/sciencesite.html" title="Научно-образовательные приложения">Научно-образовательные приложения</a></li>
+            <li><a href="category/internetsite.html" title="ПО для интернет">ПО для интернет</a></li>
+            <li><a href="category/idesite.html" title="Средства для разработки">Средства для разработки</a></li>
+            <li><a href="category/adminstrationsite.html" title="Утилиты для администрирования">Утилиты для администрирования</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="main_content">
+    <section class="about">
+        <h2>О проекте</h2>
+        <p>Добро пожаловать в наш инструмент для выбора дистрибутива Linux! Этот инструмент поможет вам найти лучший дистрибутив на основе вашего оборудования и предпочтений.</p>
+    </section>
+    <form class="contact-form" id="distroForm">
+        <h2>Выбор параметров</h2>
+        <label for="cpuCores">Количество ядер процессора:</label>
+        <input type="number" id="cpuCores" name="cpuCores" min="1" required>
+
+        <label for="cpuFrequency">Минимальная частота процессора (ГГц):</label>
+        <input type="number" id="cpuFrequency" name="cpuFrequency" step="0.1" min="0.5" required>
+
+        <label for="ram">Объем оперативной памяти (ГБ):</label>
+        <input type="number" id="ram" name="ram" min="1" required>
+
+        <label for="gpu">Тип видеокарты:</label>
+        <select id="gpu" name="gpu" required>
+            <option value="integrated">Интегрированная</option>
+            <option value="budget">Бюджетная</option>
+            <option value="midrange">Средняя</option>
+            <option value="highend">Высокопроизводительная</option>
+        </select>
+
+        <label for="preferences">Ваши предпочтения:</label>
+        <select id="preferences" name="preferences" multiple required>
+            <option value="beginner">Для начинающих</option>
+            <option value="privacy">Конфиденциальность</option>
+            <option value="development">Разработка</option>
+            <option value="gaming">Игры</option>
+            <option value="media">Медиа</option>
+            <option value="enterprise">Корпоративные решения</option>
+            <option value="lightweight">Легковесные</option>
+        </select>
+
+        <button type="submit">Найти дистрибутив</button>
+    </form>
+
+    <div class="distros-grid" id="distroResults"></div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Контакты</h3>
+            <ul>
+                <li>Email: 99.3333@mail.com</li>
+                <li>Телефон: +7-939-908-91-45</li>
+                <li>Адрес: Иркутск бульвар Гагарина дом 20</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
