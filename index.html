@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>LinLab</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="/Images/icon.png"/>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/icon.png"/>
 </head>
 <body class="theme-light">
 <div class="head_content">
     <header class="header">
         <div class="logo-title">
-            <img src="/Images/logo.png" alt="Логотип" class="logo">
+            <img src="img/logo.png" alt="Логотип" class="logo">
             <div>
                 <h1>LinLab</h1>
                 <p>Сайт по программному обеспечению для Linux</p>
             </div>
         </div>
         <div class="social-media">
-            <a href="#"><img src="/Images/vk.png" alt="Вконтакте" class="social-icon"></a>
-            <a href="#"><img src="/Images/tg.svg" alt="Телеграм" class="social-icon"></a>
+            <a href="https://vk.com/" target="_blank"><img src="img/vk.png" alt="Вконтакте" class="social-icon"></a>
+            <a href="https://web.telegram.org/" target="_blank"><img src="img/tg.png" alt="Телеграм" class="social-icon"></a>
         </div>
     </header>
 </div>
@@ -27,23 +27,23 @@
 <nav>
     <ul class="nav-list">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="Data/workSite.html">Интерактив</a></li>
-        <li><a href="Data/consSite.html">Консоль</a></li>
-        <li><a href="Data/init.html">Проект</a></li>
-        <li><a href="Data/aboutSite.html">О сайте</a></li>
+        <li><a href="data/formsite.html">Интерактив</a></li>
+        <li><a href="data/consolesite.html">Консоль</a></li>
+        <li><a href="data/initsite.html">Проект</a></li>
+        <li><a href="data/aboutsite.html">О сайте</a></li>
         <li><button id="theme-toggle">Смена темы</button></li>
     </ul>
 </nav>
 
 <div class="sidebar_left">
     <ul class="catalog">
-        <li><a href="Data/Category/distrubSite.html" title="Дистрибутивы Linux">Дистрибутивы Linux</a></li>
-        <li><a href="Data/Category/officeSite.html" title="Офисные приложения">Офисные приложения</a></li>
-        <li><a href="Data/Category/multiSite.html" title="Мультимедийные приложения">Мультимедийные приложения</a></li>
-        <li><a href="Data/Category/educaSite.html" title="Научно-образовательные приложения">Научно-образовательные приложения</a></li>
-        <li><a href="Data/Category/internetSite.html" title="ПО для интернет">ПО для интернет</a></li>
-        <li><a href="Data/Category/ideSite.html" title="Средства для разработки">Средства для разработки</a></li>
-        <li><a href="Data/Category/adminSite.html" title="Утилиты для администрирования">Утилиты для администрирования</a></li>
+        <li><a href="data/category/distributionsite.html" title="Дистрибутивы Linux">Дистрибутивы Linux</a></li>
+        <li><a href="data/category/officesite.html" title="Офисные приложения">Офисные приложения</a></li>
+        <li><a href="data/category/multimediasite.html" title="Мультимедийные приложения">Мультимедийные приложения</a></li>
+        <li><a href="data/category/sciencesite.html" title="Научно-образовательные приложения">Научно-образовательные приложения</a></li>
+        <li><a href="data/category/internetsite.html" title="ПО для интернет">ПО для интернет</a></li>
+        <li><a href="data/category/idesite.html" title="Средства для разработки">Средства для разработки</a></li>
+        <li><a href="data/category/adminstrationsite.html" title="Утилиты для администрирования">Утилиты для администрирования</a></li>
     </ul>
 </div>
 
@@ -51,25 +51,35 @@
     <div class="news_area">
         <div class="news_block">
             <h2>Вышел Rocky Linux 9.4</h2>
-            <img src="Images/news1.jpg" alt="Изображение новости 1" class="news_image">
+            <img src="img/news1.jpg" alt="Изображение новости 1" class="news_image">
             <p>Потихоньку-полегоньку, несколько дней назад вышел релиз 9.4 проекта Rocky Linux — дистрибутива, организованного Грегори Курцером в ответ на прекращение классических релизов CentOS и переход к CentOS Stream. Грегори Курцер, будучи разработчиком CentOS, решил начать всё заново, и запустил проект Rocky Linux, который должен был делать всё то же самое, что раньше делал CentOS, но теперь уже отдельно от Red Hat.</p>
-            <a href="https://rockylinux.org/news/rocky-linux-9-4-ga-release" class="source_link">Источник</a>
+            <a href="https://rockylinux.org/news/rocky-linux-9-4-ga-release" target="_blank" class="source_link">Источник</a>
         </div>
         <div class="news_block">
             <h2>Изменения для улучшения отображения KDE-приложений в GNOME и Xfce</h2>
-            <img src="Images/news2.png" alt="Изображение новости 2" class="news_image">
+            <img src="img/news2.png" alt="Изображение новости 2" class="news_image">
             <p>Нейт Грэм (Nate Graham), разработчик, занимающийся контролем качества в проекте KDE, опубликовал очередной отчёт о разработке KDE. Наиболее заметным изменением стала инициатива по решению проблем с пиктограммами, при запуске приложений, входящих в состав KDE Gear, в окружениях, отличных от KDE, таких как GNOME и Xfce.</p>
-            <a href="https://pointieststick.com/2024/05/17/this-week-in-kde-all-about-those-apps/" class="source_link">Источник</a>
+            <a href="https://pointieststick.com/2024/05/17/this-week-in-kde-all-about-those-apps/" target="_blank" class="source_link">Источник</a>
         </div>
         <div class="news_block">
-            <h2>LibreELEC 12 на базе медиацентра Kodi</h2>
-            <p>LibreELEC 12 использует медиацентр Kodi 21 «Omega». В Kodi 21 выполнен переход на FFmpeg 6, улучшена производительность и стабильность работы программы, обновлен интерфейс многих диалогов и выполнены другие улучшения.</p>
-            <a href="https://pingvinus.ru/news/5150" class="source_link">Источник</a>
+            <h2>Тинькофф разработал собственное программное обеспечение для банкоматов на Linux</h2>
+            <p>Тинькофф приступил к импортозамещению софта для собственной сети банкоматов. Первые устройства c новым программным обеспечением на операционной системе Linux уже введены в эксплуатацию и установлены в Москве.  На текущий момент почти все банкоматы в России и в мире работают на операционной системе Windows, которая принадлежит корпорации Microsoft. Тинькофф в рамках своей стратегии по импортозамещению разработал собственное программное обеспечение на операционной системе с открытым исходным кодом Linux.</p>
+            <a href="https://www.tinkoff.ru/about/news/31052024-tinkoff-has-developed-its-own-software-for-atms-on-linux/" target="_blank" class="source_link">Источник</a>
         </div>
         <div class="news_block">
             <h2>ЕГЭ на Linux: в России протестируют сдачу экзамена на отечественной ОС</h2>
             <p>В ПАО «Группа "Астра"» также подтвердили участие в адаптации программного обеспечения для ЕГЭ к российским операционным системам. Как утверждают в компании, в проект привлечены и другие разработчики, поскольку решение будет мультиплатформенным. В «Ред Софта» (разработчик «Ред ОС») считают критически важным провести тестирование Рособрнадзора на популярных российских операционных системах, так как многие учебные заведения уже переведены на них. В НТЦ ИТ РОСА лишь заявили, что работают над операционной системой на базе Linux под названием РОСА, которая применяется в образовательных организациях.</p>
-            <a href="https://www.kommersant.ru/doc/6690444" class="source_link">Источник</a>
+            <a href="https://www.kommersant.ru/doc/6690444" target="_blank" class="source_link">Источник</a>
+        </div>
+        <div class="news_block">
+            <h2>LibreELEC 12 на базе медиацентра Kodi</h2>
+            <p>LibreELEC 12 использует медиацентр Kodi 21 «Omega». В Kodi 21 выполнен переход на FFmpeg 6, улучшена производительность и стабильность работы программы, обновлен интерфейс многих диалогов и выполнены другие улучшения.</p>
+            <a href="https://pingvinus.ru/news/5150" target="_blank" class="source_link">Источник</a>
+        </div>
+        <div class="news_block">
+            <h2>Alpine 3.20: меньше, быстрее, мощнее – вышла новая версия идеального Linux-дистрибутива</h2>
+            <p>22 мая вышла новая версия Alpine Linux под номером 3.20.0. Дистрибутив обзавёлся поддержкой архитектуры RISC-V, а также включает в себя KDE Plasma 6 и GNOME 46. В связи с изменением лицензии Redis, Alpine заменил его на новую базу данных Valkey.</p>
+            <a href="https://www.securitylab.ru/news/548721.php" target="_blank" class="source_link">Источник</a>
         </div>
     </div>
 </div>
@@ -85,6 +95,7 @@
             </ul>
         </div>
     </div>
+    <div id="crypto-container"></div>
 </footer>
 
 </body>
